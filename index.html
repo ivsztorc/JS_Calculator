@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator!</title>
+</head>
+<body>
+
+  <label for="number1">Number 1
+    <input type="number" name="num1" id="number1" /></label>
+
+    <label for="text1">Operator
+      <select id="select_operator">
+        <option value="add">+</option>
+        <option value="subtract">-</option>
+        <option value="divide">/</option>
+        <option value="multiply">*</option>
+      </select>
+    </label>
+
+    <label for="number2">Number 2
+      <input type="number" name="num2" id="number2" />
+    </label>
+
+    <button id="submit_button">Submit</button>
+
+    <script type="text/javascript">
+      var element = document.getElementById("submit_button");
+      element.addEventListener("click", function() { 
+        var operatortype = getElementById("select_operator");
+        var num1 = getElementById("number1");
+        var num2 = getElementById("number2");
+        // var a = 
+
+
+
+        switch (operatortype) {
+          case "add":
+          alert(num1 + num2);
+
+          break;
+
+          case "subtract":
+          alert(num1 - num2);
+
+          break;
+          case "divide":
+          alert(num1 / num2);
+
+          break;
+          case "multiply":
+          alert(num1 * num2);
+
+          break;
+
+          default:
+          console.log("Sorry, that is not valid");
+        }
+
+      });
+
+      </script>
+
+  </body>
+  </html>
